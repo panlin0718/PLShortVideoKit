@@ -213,8 +213,8 @@ PLShortVideoEditorDelegate
     self.selectionView.layer.cornerRadius = 5.0;
     [self.view addSubview:self.selectionView];
     
-    self.transcoderPreset = PLSFilePreset960x540; // 默认, 对应 selectItemNumber:3
-    self.bitrate = 3000 * 1000; // 设置码率
+    self.transcoderPreset = PLSFilePreset960x540; // 默认, 对应 selectItemNumber:3s
+    self.bitrate = 1000 * 1000; // 设置码率 //更改码率为1000kbps
     
     // 视频旋转
     UIButton *rotateVideoButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -410,45 +410,45 @@ PLShortVideoEditorDelegate
             case 0:
             {
                 self.transcoderPreset = PLSFilePresetMediumQuality;
-                self.bitrate = 3000 * 1000;
+                self.bitrate = 1000 * 1000;
             }
                 break;
             case 1:
             {
                 self.transcoderPreset = PLSFilePresetHighestQuality;
-                self.bitrate = 6000 * 1000;
+                self.bitrate = 3000 * 1000;
 
             }
                 break;
             case 2:
             {
                 self.transcoderPreset = PLSFilePreset640x480;
-                self.bitrate = 2000 * 1000;
+                self.bitrate = 800 * 1000;
             }
                 break;
             case 3:
             {
                 self.transcoderPreset = PLSFilePreset960x540;
-                self.bitrate = 3000 * 1000;
+                self.bitrate = 1000 * 1000;
             }
                 break;
             case 4:
             {
                 self.transcoderPreset = PLSFilePreset1280x720;
-                self.bitrate = 4000 * 1000;
+                self.bitrate = 1500 * 1000;
             }
                 break;
             case 5:
             {
                 self.transcoderPreset = PLSFilePreset1920x1080;
-                self.bitrate = 6000 * 1000;
+                self.bitrate = 3000 * 1000;
             }
                 break;
                 
             default:
             {
                 self.transcoderPreset = PLSFilePreset960x540;
-                self.bitrate = 3000 * 1000;
+                self.bitrate = 1000 * 1000;
             }
                 break;
         }
